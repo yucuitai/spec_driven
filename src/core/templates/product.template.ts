@@ -37,10 +37,10 @@ export function generateProductContent(spec: ProductSpec): string {
     .replace(
       /\$\{features.*?\}/s,
       spec.features
-        .map((f, i) => `### ${i + 1}. ${f.name}
-- 描述：${f.description}
-- 难度：${f.difficulty || '待定'}/5
-- 预计时间：${f.estimateTime || '待定'}`)
-        .join('\n\n')
+        .map((f, i) => \`### \${i + 1}. \${f.name}
+- 描述：\${f.description}
+- 难度：\${f.difficulty || '待定'}/5
+- 预计时间：\${f.estimateTime || '待定'}\`)
+        .join('\\n\\n')
     );
 }
