@@ -1,35 +1,39 @@
-﻿# Spec-Driven - 交互式开发文档生成工具 （开发中）
+﻿# Spec-Driven - 交互式开发文档生成工具（开发中）
 
-一个交互式CLI工具，帮助开发者从产品描述到完整的项目文档（Spec、Phase、AGENTS.md）
+从想法到完整项目文档，一站式搞定 Spec-Driven 全流程。
 
 ## 特性
 
-- 交互式向导，逐步收集产品信息
-- 自动生成 Spec 文档（产品概述、功能列表、页面/视图、数据模型、用户流程）
-- Phase 阶段拆分与验收计划
-- 支持多种AI工具（Claude、Codex）配置
-- 历史版本管理
+- 交互式 4 步向导（产品信息 → 核心功能 → 技术偏好 → 确认生成）
+- 自动生成 Spec 文档、Phase 计划、AGENTS.md
+- Markdown 渲染 + 实时编辑
+- AI 增强（接入 OpenAI 兼容 API，支持流式输出）
+- 文档导出（单文件下载 / ZIP 打包）
 
-## 安装
+## 技术栈
+
+Next.js 15 + React 19 + Tailwind CSS 4 + shadcn/ui + Zustand + react-markdown
+
+## 快速开始
 
 ```bash
 npm install
-```
-
-## 使用
-
-```bash
 npm run dev
 ```
 
-## 开发阶段
+访问 http://localhost:3000
 
-- Phase 0: 项目初始化 ✅
-- Phase 1: CLI基础框架
-- Phase 2: 规划与确定规格
-- Phase 3: 基础实现
-- Phase 4: Phase拆分
-- Phase 5: AGENTS/CLAUDE/CODEX模板
-- Phase 6: 历史版本导出
-- Phase 7: AI工具集成
-- Phase 8: 上线部署
+## 开发进度
+
+- [x] 项目初始化与基础架构
+- [x] 向导流程（4 步表单）
+- [x] Spec / Phase / Agents 文档生成与预览
+- [x] AI 增强功能
+- [x] 文档导出
+- [ ] 多项目管理（项目列表、切换、删除）
+- [ ] UI 布局重构（工作流步骤移到侧边栏）
+- [ ] 详细 README 与使用文档
+
+## 设计文档
+
+详见 [docs/OPEN_DESIGN_BRIEF.md](docs/OPEN_DESIGN_BRIEF.md)
