@@ -1,0 +1,37 @@
+{
+  "global": {
+    "language": "zh-CN",
+    "outputDir": "docs",
+    "docBaseName": "spec-driven-dev-tool-spec",
+    "branch": "main"
+  },
+  "monorepo": {
+    "enabled": false,
+    "structure": ""
+  },
+  "todo": {
+    "enabled": true,
+    "path": "./TODO.md"
+  },
+  "preferences": {
+    "tone": "友好的工程师",
+    "detailLevel": "高"
+  },
+  "ai": {
+    "providers": [
+      {
+        "name": "claude-code-cli",
+        "enabled": false,
+        "path": "",
+        "args": ["--help"],
+        "promptTemplate": "生成以下功能的完整文档..."
+      }
+    ],
+    "command": {
+      "dev": "npm run dev",
+      "build": "npm run build",
+      "test": "npm test",
+      "lint": "npm run lint"
+    }
+  }
+}

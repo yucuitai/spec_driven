@@ -1,0 +1,39 @@
+{
+  "name": "spec-driven",
+  "version": "1.0.0",
+  "description": "一个交互式CLI工具，帮助开发者从产品描述到完整的项目文档",
+  "main": "dist/cli/index.js",
+  "bin": {
+    "spec-driven": "./dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon --exec ts-node src/cli/index.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts"
+  },
+  "keywords": [
+    "cli",
+    "ai",
+    "spec-driven",
+    "documentation"
+  ],
+  "author": "yucuitai",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^8.2.6",
+    "commander": "^11.1.0",
+    "date-fns": "^3.3.1",
+    "ajv": "^8.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/inquirer": "^8.2.10",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.2",
+    "nodemon": "^3.0.2",
+    "eslint": "^8.55.0"
+  }
+}
