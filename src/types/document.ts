@@ -5,7 +5,6 @@ export interface GeneratedDocument {
   name: string;
   content: string;
   timestamp: Date;
-  config: any;
 }
 
 /**

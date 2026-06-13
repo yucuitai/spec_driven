@@ -1,4 +1,4 @@
-﻿# Spec-Driven - 交互式开发文档生成工具
+﻿# Spec-Driven - 交互式开发文档生成工具 （开发中）
 
 一个交互式CLI工具，帮助开发者从产品描述到完整的项目文档（Spec、Phase、AGENTS.md）
 

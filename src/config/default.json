@@ -2,7 +2,7 @@
   "global": {
     "language": "zh-CN",
     "outputDir": "docs",
-    "docBaseName": "spec-driven-dev-tool-spec",
+    "docBaseName": "spec",
     "branch": "main"
   },
   "monorepo": {
@@ -23,7 +23,9 @@
         "name": "claude-code-cli",
         "enabled": false,
         "path": "",
-        "args": ["--help"],
+        "args": [
+          "--help"
+        ],
         "promptTemplate": "生成以下功能的完整文档..."
       }
     ],

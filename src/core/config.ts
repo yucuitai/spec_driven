@@ -1,4 +1,4 @@
-﻿import { AgentConfig } from './types/ai';
+﻿import { AgentConfig } from '../types/ai';
 
 /**
  * 加载配置文件

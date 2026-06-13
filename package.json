@@ -1,19 +1,15 @@
 {
   "name": "spec-driven",
   "version": "1.0.0",
-  "description": "一个交互式CLI工具，帮助开发者从产品描述到完整的项目文档",
-  "main": "dist/cli/index.js",
-  "bin": {
-    "spec-driven": "./dist/cli/index.js"
-  },
+  "description": "交互式开发文档生成工具 - Spec-Driven 全流程",
   "scripts": {
-    "build": "tsc",
-    "dev": "nodemon --exec ts-node src/cli/index.ts",
-    "typecheck": "tsc --noEmit",
-    "lint": "eslint src --ext .ts"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "keywords": [
-    "cli",
+    "nextjs",
     "ai",
     "spec-driven",
     "documentation"
@@ -21,19 +17,33 @@
   "author": "yucuitai",
   "license": "MIT",
   "dependencies": {
-    "inquirer": "^8.2.6",
-    "commander": "^11.1.0",
-    "date-fns": "^3.3.1",
-    "ajv": "^8.12.0"
+    "@base-ui/react": "^1.5.0",
+    "@tailwindcss/postcss": "^4.1.8",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "file-saver": "^2.0.5",
+    "jszip": "^3.10.1",
+    "lucide-react": "^0.460.0",
+    "next": "^15.3.3",
+    "next-themes": "^0.4.6",
+    "postcss": "^8.5.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-markdown": "^9.1.0",
+    "remark-gfm": "^4.0.1",
+    "shadcn": "^4.11.0",
+    "tailwind-merge": "^3.6.0",
+    "tailwindcss": "^4.1.8",
+    "tw-animate-css": "^1.4.0",
+    "zustand": "^5.0.6"
   },
   "devDependencies": {
+    "@types/file-saver": "^2.0.7",
     "@types/node": "^20.10.0",
-    "@types/inquirer": "^8.2.10",
-    "@typescript-eslint/eslint-plugin": "^6.14.0",
-    "@typescript-eslint/parser": "^6.14.0",
-    "typescript": "^5.3.3",
-    "ts-node": "^10.9.2",
-    "nodemon": "^3.0.2",
-    "eslint": "^8.55.0"
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.3.3",
+    "typescript": "^5.3.3"
   }
 }

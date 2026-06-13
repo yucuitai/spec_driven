@@ -8,3 +8,10 @@ docs/history/*.md
 docs/Product.md
 docs/Spec.md
 docs/Phases.md
+
+# Build caches
+.next/
+.npm-cache/
+.playwright-mcp/
+.gen/
+tsconfig.tsbuildinfo
